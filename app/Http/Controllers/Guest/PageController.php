@@ -12,7 +12,7 @@ class PageController extends Controller
     public function index()
     {
         $trains = Train::All();
-        $trains_today = Train::Where('data', '=',  Carbon::today()->toDateString())->get();
-        return view('home', compact('trains', 'trains_today'));
+        $title = 'Treni';
+        return view('home', compact('trains', 'title'));
     }
 }

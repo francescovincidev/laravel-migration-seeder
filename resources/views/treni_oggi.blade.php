@@ -4,10 +4,10 @@
     <div class="container">
         <h2 class="text-center">{{ $title }}</h2>
 
-        <a class="text-center" href="/treni_oggi">Clicca qui per i treni di oggi</a>
+        <a class="text-center" href="/">Visualizza tutti i treni</a>
         <div class="row">
 
-            @foreach ($trains as $train)
+            @foreach ($trains_today as $train)
                 <div class="card m-2" style="width: 18rem;">
                     <div class="card-body">
                         <h5 class="card-title">{{ $train->azienda }}</h5>
